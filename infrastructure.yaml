@@ -1,0 +1,126 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: '24/7 AI Chatbot Infrastructure'
+
+Parameters:
+  Environment:
+    Type: String
+    Default: prod
+    AllowedValues: [dev, staging, prod]
+
+Resources:
+  # DynamoDB Tables
+  ChatHistoryTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub '${Environment}-chatbot-history'
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: sessionId
+          AttributeType: S
+        - AttributeName: timestamp
+          AttributeType: N
+      KeySchema:
+        - AttributeName: sessionId
+          KeyType: HASH
+        - AttributeName: timestamp
+          KeyType: RANGE
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES
+
+  FAQTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub '${Environment}-chatbot-faq'
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: category
+          AttributeType: S
+        - AttributeName: question
+          AttributeType: S
+      KeySchema:
+        - AttributeName: category
+          KeyType: HASH
+        - AttributeName: question
+          KeyType: RANGE
+
+  # Cognito User Pool
+  UserPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: !Sub '${Environment}-chatbot-users'
+      AutoVerifiedAttributes:
+        - email
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 8
+          RequireUppercase: true
+          RequireLowercase: true
+          RequireNumbers: true
+
+  UserPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      UserPoolId: !Ref UserPool
+      ClientName: !Sub '${Environment}-chatbot-client'
+      GenerateSecret: false
+
+  # IAM Role for Lambda
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: ChatbotPermissions
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - dynamodb:*
+                  - bedrock:InvokeModel
+                  - comprehend:*
+                  - translate:*
+                  - events:PutEvents
+                Resource: '*'
+
+  # API Gateway
+  ChatbotAPI:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      Name: !Sub '${Environment}-chatbot-api'
+      Description: 'Chatbot REST API'
+
+  # EventBridge Custom Bus
+  ChatbotEventBus:
+    Type: AWS::Events::EventBus
+    Properties:
+      Name: !Sub '${Environment}-chatbot-events'
+
+Outputs:
+  UserPoolId:
+    Value: !Ref UserPool
+    Export:
+      Name: !Sub '${Environment}-UserPoolId'
+  
+  UserPoolClientId:
+    Value: !Ref UserPoolClient
+    Export:
+      Name: !Sub '${Environment}-UserPoolClientId'
+  
+  ChatHistoryTableName:
+    Value: !Ref ChatHistoryTable
+    Export:
+      Name: !Sub '${Environment}-ChatHistoryTable'
+  
+  FAQTableName:
+    Value: !Ref FAQTable
+    Export:
+      Name: !Sub '${Environment}-FAQTable'

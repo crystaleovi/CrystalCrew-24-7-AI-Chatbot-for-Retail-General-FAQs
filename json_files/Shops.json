@@ -1,0 +1,15 @@
+[
+    {
+        "ShopName": "StyleCo",
+        "Location": "123 Fashion Street, Kuala Lumpur, Malaysia",
+        "ContactNumber": "+60-12-3456789",
+        "Email": "contact@najwafashion.com",
+        "Website": "www.styleco.com",
+        "OpeningHours": "Mon-Sun, 10:00 AM - 9:00 PM",
+        "EstablishedDate": "2015-06-01",
+        "AcceptedPayments": "Cash, Credit Card, E-Wallet, Online Banking",
+        "DeliveryOptions": "Standard, Express, Cash on Delivery",
+        "ReturnPolicy": "Returns within 14 days with receipt. Exchange allowed for same category.",
+        "SocialMedia": "Instagram: @styleco | Facebook: styleco | TikTok: @styleco"
+    }
+]

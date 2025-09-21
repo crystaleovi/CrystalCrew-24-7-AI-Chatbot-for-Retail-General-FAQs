@@ -1,0 +1,502 @@
+[
+    {
+        "CustomerID": "C001",
+        "Name": "Jody Wise",
+        "Gender": "Male",
+        "Age": "19",
+        "Email": "timothygilbert@day.info",
+        "PhoneNumber": "916.041.2711",
+        "Address": "3757 Baker Ridges\nLake Steven, WA 81204",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C002",
+        "Name": "Todd Bryant",
+        "Gender": "Male",
+        "Age": "33",
+        "Email": "xdougherty@anderson.com",
+        "PhoneNumber": "012.392.7625",
+        "Address": "886 Jason Keys\nLake Jonathanbury, WV 44647",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C003",
+        "Name": "Richard Alvarado",
+        "Gender": "Female",
+        "Age": "34",
+        "Email": "caleb09@yahoo.com",
+        "PhoneNumber": "+1-310-915-4547x70030",
+        "Address": "1168 Matthew Mission\nEast Dawn, KY 16587",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C004",
+        "Name": "Alan Maddox",
+        "Gender": "Female",
+        "Age": "46",
+        "Email": "kevinharris@gmail.com",
+        "PhoneNumber": "001-856-056-9104",
+        "Address": "87498 Kennedy Highway\nLongside, AL 59305",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C005",
+        "Name": "Justin Burke",
+        "Gender": "Female",
+        "Age": "18",
+        "Email": "josephsmith@yahoo.com",
+        "PhoneNumber": "+1-694-103-6907x718",
+        "Address": "USS Peterson\nFPO AA 92688",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C006",
+        "Name": "Michelle Kelley",
+        "Gender": "Female",
+        "Age": "41",
+        "Email": "zhanghelen@gmail.com",
+        "PhoneNumber": "160.986.4397",
+        "Address": "25764 Angie Plains\nPort Sarah, MD 00951",
+        "MembershipStatus": "Silver"
+    },
+    {
+        "CustomerID": "C007",
+        "Name": "Brian Collins",
+        "Gender": "Female",
+        "Age": "43",
+        "Email": "kimberly35@huff.info",
+        "PhoneNumber": "955-384-5995",
+        "Address": "PSC 9673, Box 6127\nAPO AA 75073",
+        "MembershipStatus": "Platinum"
+    },
+    {
+        "CustomerID": "C008",
+        "Name": "Megan White",
+        "Gender": "Female",
+        "Age": "26",
+        "Email": "kevin92@yahoo.com",
+        "PhoneNumber": "049-351-5496",
+        "Address": "151 Matthew Trafficway\nBlackwellville, MI 95863",
+        "MembershipStatus": "Platinum"
+    },
+    {
+        "CustomerID": "C009",
+        "Name": "Lisa Hernandez",
+        "Gender": "Female",
+        "Age": "32",
+        "Email": "ronald70@gmail.com",
+        "PhoneNumber": "+1-776-414-1604x40999",
+        "Address": "USNV Jones\nFPO AE 82252",
+        "MembershipStatus": "Silver"
+    },
+    {
+        "CustomerID": "C010",
+        "Name": "Jane White",
+        "Gender": "Male",
+        "Age": "44",
+        "Email": "mjoyce@coleman.org",
+        "PhoneNumber": "912-846-5410x1254",
+        "Address": "91358 Rodriguez Road Apt. 703\nLake Renee, NC 04420",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C011",
+        "Name": "Adam Berry",
+        "Gender": "Female",
+        "Age": "41",
+        "Email": "ftaylor@yahoo.com",
+        "PhoneNumber": "001-611-833-5576x9398",
+        "Address": "PSC 1125, Box 3779\nAPO AP 99354",
+        "MembershipStatus": "Platinum"
+    },
+    {
+        "CustomerID": "C012",
+        "Name": "Tammy Hamilton",
+        "Gender": "Female",
+        "Age": "52",
+        "Email": "christophersanders@phillips.com",
+        "PhoneNumber": "2549769241",
+        "Address": "841 Johnson Motorway Apt. 606\nRiveraport, MA 95027",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C013",
+        "Name": "John Robinson",
+        "Gender": "Male",
+        "Age": "50",
+        "Email": "hayleycisneros@moran.com",
+        "PhoneNumber": "851.308.4809x1675",
+        "Address": "4069 Parker Hills Apt. 199\nTylertown, RI 83731",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C014",
+        "Name": "Andrew Hernandez",
+        "Gender": "Male",
+        "Age": "43",
+        "Email": "smithbrian@hotmail.com",
+        "PhoneNumber": "987.513.6405x5497",
+        "Address": "881 Michael Square\nNew Christian, KY 95894",
+        "MembershipStatus": "Silver"
+    },
+    {
+        "CustomerID": "C015",
+        "Name": "Steven Padilla",
+        "Gender": "Male",
+        "Age": "42",
+        "Email": "torresanthony@moore.com",
+        "PhoneNumber": "8820524552",
+        "Address": "USS Jackson\nFPO AE 14935",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C016",
+        "Name": "Erica Macdonald",
+        "Gender": "Male",
+        "Age": "35",
+        "Email": "theresawalls@yahoo.com",
+        "PhoneNumber": "204.942.2379",
+        "Address": "42594 Lewis Canyon Apt. 882\nNovakshire, NH 18296",
+        "MembershipStatus": "Platinum"
+    },
+    {
+        "CustomerID": "C017",
+        "Name": "Melissa Charles",
+        "Gender": "Female",
+        "Age": "41",
+        "Email": "badams@gmail.com",
+        "PhoneNumber": "+1-805-448-5657x059",
+        "Address": "653 Chelsea Canyon Suite 416\nDouglasburgh, WI 23186",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C018",
+        "Name": "Dr. Charles Hamilton",
+        "Gender": "Female",
+        "Age": "60",
+        "Email": "qhernandez@burgess-norman.com",
+        "PhoneNumber": "001-969-651-4200x2848",
+        "Address": "102 Wilson Summit\nNew Ianchester, CT 23117",
+        "MembershipStatus": "Platinum"
+    },
+    {
+        "CustomerID": "C019",
+        "Name": "Nancy Cooper",
+        "Gender": "Female",
+        "Age": "49",
+        "Email": "kennedyscott@martin-gonzalez.com",
+        "PhoneNumber": "970.374.3844",
+        "Address": "8108 Tara Corners\nJoshuamouth, OK 88434",
+        "MembershipStatus": "Silver"
+    },
+    {
+        "CustomerID": "C020",
+        "Name": "Jamie Bailey",
+        "Gender": "Female",
+        "Age": "30",
+        "Email": "cynthiarobles@ward.com",
+        "PhoneNumber": "+1-745-096-1354x9352",
+        "Address": "59126 Troy Oval\nPort Tiffany, WA 31201",
+        "MembershipStatus": "Platinum"
+    },
+    {
+        "CustomerID": "C021",
+        "Name": "Shannon Hughes",
+        "Gender": "Male",
+        "Age": "33",
+        "Email": "schmidtdavid@moreno-hernandez.com",
+        "PhoneNumber": "+1-730-177-7671x62623",
+        "Address": "6852 Shawn Square\nFoxstad, AR 47864",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C022",
+        "Name": "Christina Barr",
+        "Gender": "Male",
+        "Age": "24",
+        "Email": "beasleystephanie@moore.com",
+        "PhoneNumber": "001-128-725-8442x821",
+        "Address": "914 Luna Bypass Suite 483\nRhodesfurt, FL 38564",
+        "MembershipStatus": "Platinum"
+    },
+    {
+        "CustomerID": "C023",
+        "Name": "Rachel Haley MD",
+        "Gender": "Female",
+        "Age": "26",
+        "Email": "rlee@walters.com",
+        "PhoneNumber": "058-214-1854x0083",
+        "Address": "3363 Cervantes Walks\nLake Paul, FL 72834",
+        "MembershipStatus": "Silver"
+    },
+    {
+        "CustomerID": "C024",
+        "Name": "Kristina Cruz",
+        "Gender": "Male",
+        "Age": "19",
+        "Email": "marie98@yahoo.com",
+        "PhoneNumber": "001-617-826-1412",
+        "Address": "67566 Tara Knolls\nScottfort, NC 77253",
+        "MembershipStatus": "Silver"
+    },
+    {
+        "CustomerID": "C025",
+        "Name": "Heather Smith",
+        "Gender": "Female",
+        "Age": "23",
+        "Email": "mwheeler@alexander.com",
+        "PhoneNumber": "+1-510-064-4419x72035",
+        "Address": "848 Richard Manor Suite 049\nAlanbury, MA 01918",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C026",
+        "Name": "Calvin Owen",
+        "Gender": "Male",
+        "Age": "18",
+        "Email": "jeremiah40@gmail.com",
+        "PhoneNumber": "+1-611-774-6489",
+        "Address": "06005 Ashley Courts\nEast Jessica, MT 00948",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C027",
+        "Name": "Theresa Anderson",
+        "Gender": "Male",
+        "Age": "23",
+        "Email": "andrew59@daniels.org",
+        "PhoneNumber": "+1-774-995-2451",
+        "Address": "584 Dustin Walks\nJordanhaven, HI 01632",
+        "MembershipStatus": "Platinum"
+    },
+    {
+        "CustomerID": "C028",
+        "Name": "Selena Ross",
+        "Gender": "Male",
+        "Age": "32",
+        "Email": "butlerisaiah@garcia.com",
+        "PhoneNumber": "(440)583-2536x4763",
+        "Address": "55565 Jarvis Valleys\nMoranville, CO 02435",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C029",
+        "Name": "Katie Brown",
+        "Gender": "Male",
+        "Age": "47",
+        "Email": "ronald11@gonzalez.biz",
+        "PhoneNumber": "6270690335",
+        "Address": "284 Doris Cliffs\nBowenmouth, RI 66189",
+        "MembershipStatus": "Silver"
+    },
+    {
+        "CustomerID": "C030",
+        "Name": "Derrick Baker",
+        "Gender": "Male",
+        "Age": "31",
+        "Email": "nfowler@yahoo.com",
+        "PhoneNumber": "+1-527-472-0499",
+        "Address": "1547 Clark Center Suite 360\nJenniferburgh, UT 47899",
+        "MembershipStatus": "Silver"
+    },
+    {
+        "CustomerID": "C031",
+        "Name": "Emily Manning",
+        "Gender": "Male",
+        "Age": "42",
+        "Email": "hbradley@yahoo.com",
+        "PhoneNumber": "254.177.4489",
+        "Address": "6001 Conway Pike\nPort Zacharystad, VT 42892",
+        "MembershipStatus": "Platinum"
+    },
+    {
+        "CustomerID": "C032",
+        "Name": "Michele Tapia",
+        "Gender": "Female",
+        "Age": "53",
+        "Email": "larsonraymond@smith-martin.com",
+        "PhoneNumber": "598.261.6094",
+        "Address": "1032 Williams Cape Apt. 175\nLake Paulamouth, SD 09307",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C033",
+        "Name": "Jennifer Smith",
+        "Gender": "Male",
+        "Age": "44",
+        "Email": "timothy33@gmail.com",
+        "PhoneNumber": "193-429-0390x877",
+        "Address": "8563 Mary Springs Suite 892\nHunterstad, MS 80713",
+        "MembershipStatus": "Platinum"
+    },
+    {
+        "CustomerID": "C034",
+        "Name": "Alexa Smith",
+        "Gender": "Female",
+        "Age": "27",
+        "Email": "brendafisher@gmail.com",
+        "PhoneNumber": "922.087.0195x0674",
+        "Address": "1714 Briana Street Suite 728\nWilcoxville, MS 02713",
+        "MembershipStatus": "Silver"
+    },
+    {
+        "CustomerID": "C035",
+        "Name": "Tony Sims",
+        "Gender": "Male",
+        "Age": "27",
+        "Email": "dpalmer@hotmail.com",
+        "PhoneNumber": "001-535-133-3264x88742",
+        "Address": "96921 Wade Station Suite 093\nKyleville, NH 37916",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C036",
+        "Name": "Ashley Odonnell",
+        "Gender": "Male",
+        "Age": "32",
+        "Email": "kennethwalter@snow-jennings.com",
+        "PhoneNumber": "+1-052-297-0846",
+        "Address": "13987 Mcdaniel Roads Apt. 264\nCraigfort, MI 58164",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C037",
+        "Name": "Kelly Hampton",
+        "Gender": "Female",
+        "Age": "41",
+        "Email": "wdiaz@hotmail.com",
+        "PhoneNumber": "+1-738-624-0950x540",
+        "Address": "275 George Meadows\nNew Sarah, KS 91476",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C038",
+        "Name": "Brett Newman",
+        "Gender": "Male",
+        "Age": "43",
+        "Email": "sean02@davis.biz",
+        "PhoneNumber": "131-941-2871x9067",
+        "Address": "51865 Julia Crossing\nPort Edward, MN 56932",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C039",
+        "Name": "Dana Morgan",
+        "Gender": "Male",
+        "Age": "32",
+        "Email": "vdowns@yahoo.com",
+        "PhoneNumber": "901.702.7431",
+        "Address": "9228 Nicole Valley\nSouth Cynthiaville, HI 06687",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C040",
+        "Name": "Sharon Davis",
+        "Gender": "Female",
+        "Age": "29",
+        "Email": "pmcdonald@norton-washington.biz",
+        "PhoneNumber": "026-257-6159x07496",
+        "Address": "2629 Jackson Green\nRichardsonland, IL 26733",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C041",
+        "Name": "John Odom",
+        "Gender": "Male",
+        "Age": "28",
+        "Email": "jackevans@nelson.com",
+        "PhoneNumber": "001-099-135-9049",
+        "Address": "989 Alvarez Drives\nNorth Cody, MO 60929",
+        "MembershipStatus": "Platinum"
+    },
+    {
+        "CustomerID": "C042",
+        "Name": "James Price",
+        "Gender": "Male",
+        "Age": "43",
+        "Email": "ipotter@gmail.com",
+        "PhoneNumber": "(783)614-7485x60815",
+        "Address": "6439 Bray Glens\nHarriston, NM 22769",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C043",
+        "Name": "Gregory Becker",
+        "Gender": "Female",
+        "Age": "35",
+        "Email": "david39@hill.info",
+        "PhoneNumber": "846-618-6016x78194",
+        "Address": "183 Brown Shore Apt. 214\nPort Garrett, LA 62970",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C044",
+        "Name": "Justin Walters",
+        "Gender": "Female",
+        "Age": "46",
+        "Email": "sjohnson@flynn.com",
+        "PhoneNumber": "001-082-901-4015",
+        "Address": "4905 Johnson Harbor\nWest Austin, OH 22725",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C045",
+        "Name": "Nathan Lawson",
+        "Gender": "Female",
+        "Age": "38",
+        "Email": "robert15@gmail.com",
+        "PhoneNumber": "894.866.6810x11040",
+        "Address": "03768 Christina Route\nEast Mackenzie, KS 61141",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C046",
+        "Name": "Timothy Diaz",
+        "Gender": "Female",
+        "Age": "23",
+        "Email": "jcoleman@yahoo.com",
+        "PhoneNumber": "859-177-5913x07620",
+        "Address": "USNS Schultz\nFPO AA 59175",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C047",
+        "Name": "Colleen Perry",
+        "Gender": "Female",
+        "Age": "39",
+        "Email": "jpennington@ferguson.com",
+        "PhoneNumber": "001-292-680-3452x9788",
+        "Address": "7388 Robert Villages\nParkport, NH 06956",
+        "MembershipStatus": "Silver"
+    },
+    {
+        "CustomerID": "C048",
+        "Name": "Chad Christensen",
+        "Gender": "Male",
+        "Age": "50",
+        "Email": "slewis@hotmail.com",
+        "PhoneNumber": "001-142-655-1288x26924",
+        "Address": "79785 Jeffrey Islands Suite 603\nEast Todd, ND 44697",
+        "MembershipStatus": "Regular"
+    },
+    {
+        "CustomerID": "C049",
+        "Name": "John Navarro",
+        "Gender": "Male",
+        "Age": "41",
+        "Email": "jonesmargaret@gmail.com",
+        "PhoneNumber": "001-549-802-8182x26600",
+        "Address": "45484 Brittany Meadows Apt. 989\nRoyburgh, IL 89864",
+        "MembershipStatus": "Gold"
+    },
+    {
+        "CustomerID": "C050",
+        "Name": "Rebecca Foster",
+        "Gender": "Female",
+        "Age": "31",
+        "Email": "pattyjones@gmail.com",
+        "PhoneNumber": "868-796-4622x63024",
+        "Address": "561 Williams Overpass\nEast Amyport, WV 91972",
+        "MembershipStatus": "Regular"
+    }
+]

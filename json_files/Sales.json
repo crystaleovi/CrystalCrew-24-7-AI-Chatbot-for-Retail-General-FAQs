@@ -1,0 +1,452 @@
+[
+    {
+        "TransactionID": "T001",
+        "Date": "2025-01-15",
+        "CustomerID": "C040",
+        "ProductID": "P044",
+        "QuantityPurchased": "1",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "64.69"
+    },
+    {
+        "TransactionID": "T002",
+        "Date": "2025-07-26",
+        "CustomerID": "C049",
+        "ProductID": "P002",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "962.1"
+    },
+    {
+        "TransactionID": "T003",
+        "Date": "2025-06-14",
+        "CustomerID": "C018",
+        "ProductID": "P047",
+        "QuantityPurchased": "3",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "408.63"
+    },
+    {
+        "TransactionID": "T004",
+        "Date": "2025-03-12",
+        "CustomerID": "C015",
+        "ProductID": "P026",
+        "QuantityPurchased": "4",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "351.12"
+    },
+    {
+        "TransactionID": "T005",
+        "Date": "2025-04-03",
+        "CustomerID": "C032",
+        "ProductID": "P045",
+        "QuantityPurchased": "2",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "151.3"
+    },
+    {
+        "TransactionID": "T006",
+        "Date": "2025-05-22",
+        "CustomerID": "C001",
+        "ProductID": "P027",
+        "QuantityPurchased": "3",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "397.44"
+    },
+    {
+        "TransactionID": "T007",
+        "Date": "2025-02-08",
+        "CustomerID": "C012",
+        "ProductID": "P004",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "100.2"
+    },
+    {
+        "TransactionID": "T008",
+        "Date": "2024-10-19",
+        "CustomerID": "C049",
+        "ProductID": "P030",
+        "QuantityPurchased": "2",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "258.22"
+    },
+    {
+        "TransactionID": "T009",
+        "Date": "2025-07-19",
+        "CustomerID": "C003",
+        "ProductID": "P008",
+        "QuantityPurchased": "1",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "184.86"
+    },
+    {
+        "TransactionID": "T010",
+        "Date": "2025-07-12",
+        "CustomerID": "C017",
+        "ProductID": "P026",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "438.9"
+    },
+    {
+        "TransactionID": "T011",
+        "Date": "2025-05-29",
+        "CustomerID": "C034",
+        "ProductID": "P006",
+        "QuantityPurchased": "2",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "215.62"
+    },
+    {
+        "TransactionID": "T012",
+        "Date": "2025-08-01",
+        "CustomerID": "C044",
+        "ProductID": "P023",
+        "QuantityPurchased": "1",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "99.54"
+    },
+    {
+        "TransactionID": "T013",
+        "Date": "2025-04-10",
+        "CustomerID": "C017",
+        "ProductID": "P016",
+        "QuantityPurchased": "1",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "104.43"
+    },
+    {
+        "TransactionID": "T014",
+        "Date": "2024-10-06",
+        "CustomerID": "C010",
+        "ProductID": "P047",
+        "QuantityPurchased": "4",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "544.84"
+    },
+    {
+        "TransactionID": "T015",
+        "Date": "2024-09-20",
+        "CustomerID": "C050",
+        "ProductID": "P002",
+        "QuantityPurchased": "4",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "769.68"
+    },
+    {
+        "TransactionID": "T016",
+        "Date": "2025-06-04",
+        "CustomerID": "C016",
+        "ProductID": "P036",
+        "QuantityPurchased": "2",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "360.72"
+    },
+    {
+        "TransactionID": "T017",
+        "Date": "2025-05-09",
+        "CustomerID": "C008",
+        "ProductID": "P030",
+        "QuantityPurchased": "3",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "387.33"
+    },
+    {
+        "TransactionID": "T018",
+        "Date": "2025-07-04",
+        "CustomerID": "C019",
+        "ProductID": "P049",
+        "QuantityPurchased": "1",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "195.53"
+    },
+    {
+        "TransactionID": "T019",
+        "Date": "2024-10-20",
+        "CustomerID": "C013",
+        "ProductID": "P047",
+        "QuantityPurchased": "4",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "544.84"
+    },
+    {
+        "TransactionID": "T020",
+        "Date": "2025-01-29",
+        "CustomerID": "C009",
+        "ProductID": "P028",
+        "QuantityPurchased": "2",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "77.78"
+    },
+    {
+        "TransactionID": "T021",
+        "Date": "2025-06-12",
+        "CustomerID": "C038",
+        "ProductID": "P006",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "539.05"
+    },
+    {
+        "TransactionID": "T022",
+        "Date": "2025-06-29",
+        "CustomerID": "C001",
+        "ProductID": "P046",
+        "QuantityPurchased": "1",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "147.8"
+    },
+    {
+        "TransactionID": "T023",
+        "Date": "2025-04-25",
+        "CustomerID": "C017",
+        "ProductID": "P015",
+        "QuantityPurchased": "3",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "575.82"
+    },
+    {
+        "TransactionID": "T024",
+        "Date": "2024-11-17",
+        "CustomerID": "C032",
+        "ProductID": "P045",
+        "QuantityPurchased": "1",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "75.65"
+    },
+    {
+        "TransactionID": "T025",
+        "Date": "2025-04-22",
+        "CustomerID": "C036",
+        "ProductID": "P043",
+        "QuantityPurchased": "4",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "621.56"
+    },
+    {
+        "TransactionID": "T026",
+        "Date": "2025-07-20",
+        "CustomerID": "C015",
+        "ProductID": "P044",
+        "QuantityPurchased": "3",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "194.07"
+    },
+    {
+        "TransactionID": "T027",
+        "Date": "2024-09-29",
+        "CustomerID": "C007",
+        "ProductID": "P002",
+        "QuantityPurchased": "2",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "384.84"
+    },
+    {
+        "TransactionID": "T028",
+        "Date": "2024-12-26",
+        "CustomerID": "C039",
+        "ProductID": "P013",
+        "QuantityPurchased": "2",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "127.5"
+    },
+    {
+        "TransactionID": "T029",
+        "Date": "2025-06-05",
+        "CustomerID": "C036",
+        "ProductID": "P015",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "959.7"
+    },
+    {
+        "TransactionID": "T030",
+        "Date": "2024-10-03",
+        "CustomerID": "C025",
+        "ProductID": "P047",
+        "QuantityPurchased": "4",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "544.84"
+    },
+    {
+        "TransactionID": "T031",
+        "Date": "2024-10-24",
+        "CustomerID": "C028",
+        "ProductID": "P016",
+        "QuantityPurchased": "3",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "313.29"
+    },
+    {
+        "TransactionID": "T032",
+        "Date": "2025-02-06",
+        "CustomerID": "C041",
+        "ProductID": "P016",
+        "QuantityPurchased": "2",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "208.86"
+    },
+    {
+        "TransactionID": "T033",
+        "Date": "2025-05-24",
+        "CustomerID": "C044",
+        "ProductID": "P038",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "255.65"
+    },
+    {
+        "TransactionID": "T034",
+        "Date": "2024-11-16",
+        "CustomerID": "C039",
+        "ProductID": "P012",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "429.3"
+    },
+    {
+        "TransactionID": "T035",
+        "Date": "2024-11-12",
+        "CustomerID": "C032",
+        "ProductID": "P006",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "539.05"
+    },
+    {
+        "TransactionID": "T036",
+        "Date": "2025-03-31",
+        "CustomerID": "C030",
+        "ProductID": "P046",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "739"
+    },
+    {
+        "TransactionID": "T037",
+        "Date": "2025-03-28",
+        "CustomerID": "C007",
+        "ProductID": "P007",
+        "QuantityPurchased": "4",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "501.12"
+    },
+    {
+        "TransactionID": "T038",
+        "Date": "2024-11-07",
+        "CustomerID": "C002",
+        "ProductID": "P035",
+        "QuantityPurchased": "4",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "795.72"
+    },
+    {
+        "TransactionID": "T039",
+        "Date": "2025-05-12",
+        "CustomerID": "C049",
+        "ProductID": "P050",
+        "QuantityPurchased": "4",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "635.36"
+    },
+    {
+        "TransactionID": "T040",
+        "Date": "2025-08-20",
+        "CustomerID": "C020",
+        "ProductID": "P007",
+        "QuantityPurchased": "4",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "501.12"
+    },
+    {
+        "TransactionID": "T041",
+        "Date": "2024-10-27",
+        "CustomerID": "C001",
+        "ProductID": "P040",
+        "QuantityPurchased": "3",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "154.95"
+    },
+    {
+        "TransactionID": "T042",
+        "Date": "2025-01-03",
+        "CustomerID": "C001",
+        "ProductID": "P002",
+        "QuantityPurchased": "3",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "577.26"
+    },
+    {
+        "TransactionID": "T043",
+        "Date": "2025-07-03",
+        "CustomerID": "C001",
+        "ProductID": "P014",
+        "QuantityPurchased": "3",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "291.03"
+    },
+    {
+        "TransactionID": "T044",
+        "Date": "2025-03-09",
+        "CustomerID": "C041",
+        "ProductID": "P022",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "517.2"
+    },
+    {
+        "TransactionID": "T045",
+        "Date": "2025-02-10",
+        "CustomerID": "C013",
+        "ProductID": "P009",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "769"
+    },
+    {
+        "TransactionID": "T046",
+        "Date": "2024-09-25",
+        "CustomerID": "C006",
+        "ProductID": "P038",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "E-Wallet",
+        "TotalAmount": "255.65"
+    },
+    {
+        "TransactionID": "T047",
+        "Date": "2025-09-01",
+        "CustomerID": "C027",
+        "ProductID": "P032",
+        "QuantityPurchased": "1",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "128.57"
+    },
+    {
+        "TransactionID": "T048",
+        "Date": "2025-05-01",
+        "CustomerID": "C008",
+        "ProductID": "P017",
+        "QuantityPurchased": "4",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "569.84"
+    },
+    {
+        "TransactionID": "T049",
+        "Date": "2025-01-24",
+        "CustomerID": "C020",
+        "ProductID": "P023",
+        "QuantityPurchased": "5",
+        "PaymentMethod": "Cash",
+        "TotalAmount": "497.7"
+    },
+    {
+        "TransactionID": "T050",
+        "Date": "2025-06-25",
+        "CustomerID": "C048",
+        "ProductID": "P017",
+        "QuantityPurchased": "2",
+        "PaymentMethod": "Credit Card",
+        "TotalAmount": "284.92"
+    }
+]

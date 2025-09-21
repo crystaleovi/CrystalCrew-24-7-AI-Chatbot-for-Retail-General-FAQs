@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/7 AI Retail Chatbot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .chat-container {
+            width: 400px;
+            height: 600px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .chat-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .chat-header h1 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .chat-header p {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+        
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .message.user {
+            justify-content: flex-end;
+        }
+        
+        .message-content {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .message.bot .message-content {
+            background: #e9ecef;
+            color: #333;
+        }
+        
+        .message.user .message-content {
+            background: #667eea;
+            color: white;
+        }
+        
+        .chat-input {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .input-group input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #e9ecef;
+            border-radius: 25px;
+            outline: none;
+            font-size: 14px;
+        }
+        
+        .input-group input:focus {
+            border-color: #667eea;
+        }
+        
+        .input-group button {
+            padding: 12px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        
+        .input-group button:hover {
+            background: #5a6fd8;
+        }
+        
+        .input-group button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .typing-indicator {
+            display: none;
+            padding: 12px 16px;
+            background: #e9ecef;
+            border-radius: 18px;
+            max-width: 80%;
+            margin-bottom: 15px;
+        }
+        
+        .typing-dots {
+            display: flex;
+            gap: 4px;
+        }
+        
+        .typing-dots span {
+            width: 8px;
+            height: 8px;
+            background: #999;
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+        }
+        
+        .typing-dots span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .typing-dots span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes typing {
+            0%, 60%, 100% {
+                transform: translateY(0);
+            }
+            30% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .language-selector {
+            margin-bottom: 10px;
+        }
+        
+        .language-selector select {
+            padding: 8px 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            background: white;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>🛍️ Retail Assistant</h1>
+            <p>24/7 AI-Powered Customer Support</p>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-content">
+                    Hello! I'm your AI shopping assistant. I can help you with store hours, returns, shipping, and more. How can I assist you today?
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="zh">中文</option>
+                    <option value="ja">日本語</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="text" id="messageInput" placeholder="Type your message..." maxlength="500">
+                <button id="sendButton" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let sessionId = 'session-' + Math.random().toString(36).substr(2, 9);
+        
+        // Demo mode - simulate responses without actual API calls
+        const demoResponses = {
+            'store hours': 'Our store is open Monday-Saturday 9AM-9PM, Sunday 10AM-6PM.',
+            'return': 'We accept returns within 30 days of purchase with original receipt and tags attached.',
+            'shipping': 'Standard shipping takes 3-5 business days. Express shipping takes 1-2 business days.',
+            'payment': 'We accept all major credit cards, PayPal, Apple Pay, and Google Pay.',
+            'location': 'We have multiple locations. Please visit our store locator on our website.',
+            'size': 'You can find size guides on each product page or in our sizing section.',
+            'default': 'Thank you for your question! Our customer service team is here to help. For specific product information, please check our website or visit one of our stores.'
+        };
+        
+        function addMessage(content, isUser = false, metadata = null) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user' : 'bot'}`;
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            contentDiv.textContent = content;
+            
+            messageDiv.appendChild(contentDiv);
+            messagesContainer.appendChild(messageDiv);
+            
+            // Add metadata display for bot responses
+            if (!isUser && metadata) {
+                const metaDiv = document.createElement('div');
+                metaDiv.style.fontSize = '10px';
+                metaDiv.style.color = '#666';
+                metaDiv.style.marginTop = '5px';
+                metaDiv.textContent = `Sentiment: ${metadata.sentiment} | Language: ${metadata.language} | FAQ: ${metadata.usedFAQ ? 'Yes' : 'No'}`;
+                contentDiv.appendChild(metaDiv);
+            }
+            
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+        
+        function showTypingIndicator() {
+            const messagesContainer = document.getElementById('chatMessages');
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'typing-indicator';
+            typingDiv.id = 'typingIndicator';
+            typingDiv.innerHTML = `
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            `;
+            messagesContainer.appendChild(typingDiv);
+            typingDiv.style.display = 'block';
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+        
+        function hideTypingIndicator() {
+            const typingIndicator = document.getElementById('typingIndicator');
+            if (typingIndicator) {
+                typingIndicator.remove();
+            }
+        }
+        
+        async function sendMessage() {
+            const messageInput = document.getElementById('messageInput');
+            const sendButton = document.getElementById('sendButton');
+            const languageSelect = document.getElementById('languageSelect');
+            
+            const message = messageInput.value.trim();
+            if (!message) return;
+            
+            // Add user message
+            addMessage(message, true);
+            messageInput.value = '';
+            sendButton.disabled = true;
+            
+            // Show typing indicator
+            showTypingIndicator();
+            
+            try {
+                // Simulate API delay
+                await new Promise(resolve => setTimeout(resolve, 1000 + Math.random() * 2000));
+                
+                // Demo response logic
+                const lowerMessage = message.toLowerCase();
+                let response = demoResponses.default;
+                
+                for (const [key, value] of Object.entries(demoResponses)) {
+                    if (key !== 'default' && lowerMessage.includes(key)) {
+                        response = value;
+                        break;
+                    }
+                }
+                
+                // Simulate metadata
+                const metadata = {
+                    sentiment: Math.random() > 0.7 ? 'POSITIVE' : Math.random() > 0.3 ? 'NEUTRAL' : 'NEGATIVE',
+                    language: languageSelect.value,
+                    usedFAQ: Math.random() > 0.5
+                };
+                
+                hideTypingIndicator();
+                addMessage(response, false, metadata);
+                
+            } catch (error) {
+                hideTypingIndicator();
+                addMessage('Sorry, I encountered an error. Please try again.', false);
+            } finally {
+                sendButton.disabled = false;
+            }
+        }
+        
+        // Enter key support
+        document.getElementById('messageInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+        
+        // Demo welcome message with features
+        setTimeout(() => {
+            addMessage('✨ Features I support:\n• Multilingual conversations\n• Sentiment analysis\n• FAQ matching\n• 24/7 availability\n• Real-time analytics\n\nTry asking about store hours, returns, or shipping!', false);
+        }, 2000);
+    </script>
+</body>
+</html>
